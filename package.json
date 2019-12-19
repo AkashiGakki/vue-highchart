@@ -1,10 +1,11 @@
 {
-  "name": "vue-highcharts",
-  "version": "0.1.0",
-  "private": true,
+  "name": "@akashi_sai/vue-highcharts",
+  "version": "0.1.1",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
+    "build-bundle": "vue-cli-service build --target lib --name vue-highcharts ./src/components/index.js",
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
@@ -38,5 +39,16 @@
   "browserslist": [
     "> 1%",
     "last 2 versions"
+  ],
+  "main": "dist/vue-highcharts.common.js",
+  "files": [
+    "dist/*",
+    "src/*",
+    "public/*",
+    "map/*",
+    "options/*",
+    "test/*",
+    "*.json",
+    "*.js"
   ]
 }
