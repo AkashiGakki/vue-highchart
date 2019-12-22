@@ -1,5 +1,5 @@
 <template>
-    <div class="chart" :option="option"></div>
+    <div class="chart" :option="option" :config="config"></div>
 </template>
 
 <script>
@@ -8,8 +8,13 @@
         name: "Chart",
         props: {
             option: {
-                type: Object
-            }
+                type: Object,
+            },
+            config: {
+                type: Object,
+                VueHighcharts: HighCharts
+            },
+            VueHighcharts: HighCharts
         },
         watch: {
             option() {
@@ -18,6 +23,7 @@
         },
         mounted () {
             HighCharts.chart(this.$el, this.option)
+            // const VueHighcharts = HighCharts
         }
     }
 </script>

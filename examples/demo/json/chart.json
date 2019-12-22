@@ -1,0 +1,26 @@
+{
+    "chart": {
+      "type": "bar"
+    },
+    "title": {
+      "text": "Highcharts_Demo"
+    },
+    "xAxis": {
+      "categories": ["苹果", "香蕉", "橙子"]
+    },
+    "yAxis": {
+      "title": {
+        "text": "吃水果个数"
+      }
+    },
+    "series": [{
+      "name": "Akashi",
+      "data": [4, 6, 3]
+    }, {
+      "name": "Asuka",
+      "data": [1, 2, 4]
+    }],
+    "credits":{
+      "enabled": false
+    }
+}
