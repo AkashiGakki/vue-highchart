@@ -1,10 +1,13 @@
 <template>
     <div id="app">
-        <chart :config="chartConf"></chart>
+        <v-chart :config="chartConf"></v-chart>
+        <v-map :config="mapConf"></v-map>
     </div>
 </template>
 
 <script>
+    const mapdata = require('./map/china')
+
     export default {
         name: 'App',
         components: {
@@ -28,7 +31,38 @@
                         data: [5, 7, 3]
                     }],
                 },
+                mapConf: {
+                    title: "China_Map",
+                    series: [{
+                        mapData: mapdata,
+                        name: 'Province',
+                        data: [{
+                            name: '北京',
+                            value: 2000,
+                            rank: 1
+                        }, {
+                            name: '上海',
+                            value: 1500,
+                            rank: 2
+                        }, {
+                            name: '四川',
+                            value: 1600,
+                            rank: 3
+                        }, {
+                            name: '广东',
+                            value: 1600,
+                            rank: 4
+                        }],
+                        joinBy: 'name'
+                    }]
+                }
             }
+        },
+        computed: {
+
+        },
+        methods: {
+
         }
     }
 </script>

@@ -5,10 +5,10 @@ import Map from "./Map"
 
 const VueHighCharts = [
     {
-        name: 'chart',
+        name: 'v-chart',
         component: Chart
     }, {
-        name: 'map',
+        name: 'v-map',
         component: Map
     }
 ]
