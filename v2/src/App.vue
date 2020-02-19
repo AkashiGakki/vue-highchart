@@ -39,6 +39,11 @@
                     title: {
                         text: "China_Map"
                     },
+                    credits: {
+                        enabled: true,
+                        href: 'https://akashi_sai.gitee.io',
+                        text: 'Akashi_Sai'
+                    },
                     series: [{
                         mapData: mapdata,
                         name: 'Province',
@@ -48,7 +53,7 @@
                             rank: 1
                         }, {
                             name: '上海',
-                            value: 1500,
+                            value: 2100,
                             rank: 2
                         }, {
                             name: '四川',
