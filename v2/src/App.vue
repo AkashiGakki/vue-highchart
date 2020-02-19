@@ -15,8 +15,12 @@
         data () {
             return {
                 chartConf: {
-                    type: 'bar',
-                    title: 'Highcharts_Demo',
+                    chart: {
+                        type: 'bar'
+                    },
+                    title: {
+                        text: 'Highcharts_Demo'
+                    },
                     xAxis: {
                         categories: ['苹果', '香蕉', '橙子']   // x 轴分类
                     },
@@ -32,7 +36,9 @@
                     }],
                 },
                 mapConf: {
-                    title: "China_Map",
+                    title: {
+                        text: "China_Map"
+                    },
                     series: [{
                         mapData: mapdata,
                         name: 'Province',
