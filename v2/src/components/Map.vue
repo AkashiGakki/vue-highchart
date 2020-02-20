@@ -111,7 +111,7 @@
                     this.options.xAxis = this.config.xAxis
                 }
                 if (this.config.yAxis) {
-                    this.options.xAxis = this.config.xAxis
+                    this.options.yAxis = this.config.yAxis
                 }
                 if (this.config.global) {
                     this.options.global = this.config.global
