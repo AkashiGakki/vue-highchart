@@ -2,11 +2,13 @@
     <div id="app">
         <v-chart :config="chartConf"></v-chart>
         <v-map :config="mapConf"></v-map>
+        <v-map :config="worldConf"></v-map>
     </div>
 </template>
 
 <script>
-    const mapdata = require('./map/china')
+    const mapdata = require('./map/china');
+    const worlddata = require('./map/world');
 
     export default {
         name: 'App',
@@ -66,6 +68,56 @@
                         }],
                         joinBy: 'name'
                     }]
+                },
+                worldConf: {
+                    title: {
+                        text: 'World_Map'
+                    },
+                    // chart: {
+                    //     zoomType: 'xy',
+                    //     resetZoomButton: {
+                    //         position: {
+                    //             x: 0,
+                    //             y: 0
+                    //         }
+                    //     }
+                    // },
+                    series: [{
+                        mapData: worlddata,
+                        name: 'Country',
+                        data: [{
+                            name: 'China',
+                            value: 1230
+                        },{
+                            name: 'United States of America',
+                            value: 1235
+                        },{
+                            name: 'Australia',
+                            value: 1245
+                        },{
+                            name: 'Russia',
+                            value: 1256
+                        }],
+                        joinBy: 'name'
+                    }],
+                    xAxis: {
+                        min: -3000,
+                        // max: 10500
+                    },
+                    yAxis: {
+
+                    },
+                    mapNavigation: {
+                        enabled: true,              // 开启地图导航器，默认是 false
+                        enableButtons: true,        // 是否启用缩放按钮
+                    },
+                    chart: {
+                        events: {
+                            load () {
+                                this.mapZoom(0.4, 10000, -7200)
+                            }
+                        }
+                    }
                 }
             }
         },
