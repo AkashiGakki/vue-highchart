@@ -1,6 +1,6 @@
 <template>
     <div id="app">
-        <v-chart :config="chartConf"></v-chart>
+        <v-chart :config="chartConf" :theme="theme"></v-chart>
         <v-map :config="mapConf"></v-map>
         <v-map :config="worldConf"></v-map>
     </div>
@@ -16,6 +16,17 @@
         },
         data () {
             return {
+                theme: {
+                    type: 'avocado',
+                    // type: 'black-white',
+                    // chart: {
+                    //     backgroundColor: 'black'
+                    // },
+                    // colorAxis: {
+                    //     minColor: '#ccc',
+                    //     maxColor: '#222'
+                    // }
+                },
                 chartConf: {
                     chart: {
                         type: 'bar'
@@ -73,15 +84,6 @@
                     title: {
                         text: 'World_Map'
                     },
-                    // chart: {
-                    //     zoomType: 'xy',
-                    //     resetZoomButton: {
-                    //         position: {
-                    //             x: 0,
-                    //             y: 0
-                    //         }
-                    //     }
-                    // },
                     series: [{
                         mapData: worlddata,
                         name: 'Country',

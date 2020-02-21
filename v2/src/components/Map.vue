@@ -14,12 +14,28 @@
     import HighMaps from 'highcharts/modules/map';
     HighMaps(Highcharts);
 
+    import avocado from "../themes/avocado";
+    import darkBlue from '../themes/dark-blue';
+    import darkGreen from '../themes/dark-green';
+    import darkUnica from '../themes/dark-unica';
+    import gray from '../themes/gray';
+    import grid from '../themes/grid';
+    import gridLight from '../themes/grid-light';
+    import oliveGreen from '../themes/olive-green';
+    import sandSignika from '../themes/sand-signika';
+    import skies from "../themes/skies";
+    import sunset from "../themes/sunset";
+
     export default {
         name: "Map",
         props: {
             config: {
                 type: Object
             },
+            theme: {
+                type: Object,
+                default: () => ({})
+            }
         },
         data () {
             return {
@@ -32,11 +48,13 @@
                     credits: {
                         enabled: false
                     },
+                    // theme: this.config.theme.type || null,
                 }
             }
         },
         mounted () {
             this.confShow();
+            this.useTheme();
             this.initChart();
             // this.print();
         },
@@ -118,6 +136,44 @@
                 }
                 if (this.config.lang) {
                     this.options.lang = this.config.lang
+                }
+            },
+            useTheme () {
+                if (this.theme) {
+                    Highcharts.setOptions(this.theme)
+                }
+                if (this.theme.type === 'avocado') {
+                    this.chart = new Highcharts.setOptions(avocado)
+                }
+                if (this.theme.type === 'dark-blue') {
+                    this.chart = new Highcharts.setOptions(darkBlue)
+                }
+                if (this.theme.type === 'dark-green') {
+                    this.chart = new Highcharts.setOptions(darkGreen)
+                }
+                if (this.theme.type === 'dark-unica') {
+                    this.chart = new Highcharts.setOptions(darkUnica)
+                }
+                if (this.theme.type === 'gray') {
+                    this.chart = new Highcharts.setOptions(gray)
+                }
+                if (this.theme.type === 'grid') {
+                    this.chart = new Highcharts.setOptions(grid)
+                }
+                if (this.theme.type === 'grid-light') {
+                    this.chart = new Highcharts.setOptions(gridLight)
+                }
+                if (this.theme.type === 'olive-green') {
+                    this.chart = new Highcharts.setOptions(oliveGreen)
+                }
+                if (this.theme.type === 'sand-signika') {
+                    this.chart = new Highcharts.setOptions(sandSignika)
+                }
+                if (this.theme.type === 'skies') {
+                    this.chart = new Highcharts.setOptions(skies)
+                }
+                if (this.theme.type === 'sunset') {
+                    this.chart = new Highcharts.setOptions(sunset)
                 }
             },
         }
