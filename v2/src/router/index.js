@@ -17,11 +17,53 @@ const routes = [{
         },
         component: (resolve) => require(['../views/line.vue'], resolve)
     }, {
+        path: '/bar',
+        meta: {
+            title: 'bar'
+        },
+        component: (resolve) => require(['../views/bar.vue'], resolve)
+    }, {
         path: '/area',
         meta: {
             title: 'area'
         },
         component: (resolve) => require(['../views/area.vue'], resolve)
+    }, {
+        path: '/pie',
+        meta: {
+            title: 'pie'
+        },
+        component: (resolve) => require(['../views/pie.vue'], resolve)
+    }, {
+        path: '/scatter',
+        meta: {
+            title: 'scatter'
+        },
+        component: (resolve) => require(['../views/scatter.vue'], resolve)
+    }, {
+        path: '/mix',
+        meta: {
+            title: 'mix'
+        },
+        component: (resovlve) => require(['../views/mix.vue'], resovlve)
+    }, {
+        path: '/dynamic',
+        meta: {
+            title: 'dynamic'
+        },
+        component: (resolve) => require(['../views/dynamic.vue'], resolve)
+    }, {
+        path: '/more',
+        meta: {
+            title: 'more'
+        },
+        component: (resolve) => require(['../views/more.vue'], resolve)
+    }, {
+        path: '/table',
+        meta: {
+            title: 'table'
+        },
+        component: (resolve) => require(['../views/table.vue'], resolve)
     }, {
         path: '*',
         redirect: '/'

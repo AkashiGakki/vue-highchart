@@ -15,7 +15,7 @@
         data () {
             return {
                 theme: {
-                    type: 'avocado',
+                    type: 'sunset',
                     // type: 'black-white',
                     // chart: {
                     //     backgroundColor: 'black'
@@ -40,7 +40,7 @@
                     },
                     series: [{                              // 数据列
                         name: 'Akashi',                        // 数据列名
-                        data: [1, 2, 4]                     // 数据
+                        data: [2, 3, 4]                  // 数据
                     }, {
                         name: 'Asuka',
                         data: [5, 7, 3]
