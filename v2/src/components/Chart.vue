@@ -24,7 +24,44 @@
     import skies from "../themes/skies";
     import sunset from "../themes/sunset";
 
-    let VueHighCharts = Highcharts;
+    import Data from 'highcharts/modules/data';
+    Data(Highcharts);
+    // 宽度可变环形图
+    import Vary from 'highcharts/modules/variable-pie';
+    Vary(Highcharts);
+    // 旭日图
+    import Sunburst from 'highcharts/modules/sunburst';
+    Sunburst(Highcharts);
+    import Venn from 'highcharts/modules/venn';
+    Venn(Highcharts);
+
+    // 漏斗图
+    import Funnel from 'highcharts/modules/funnel';
+    Funnel(Highcharts);
+    // 贝尔曲线
+    import Bell from 'highcharts/modules/histogram-bellcurve';
+    Bell(Highcharts);
+    // 时序图
+    import TimeLine from 'highcharts/modules/timeline';
+    TimeLine(Highcharts);
+    // 柏拉图
+    import Pareto from 'highcharts/modules/pareto';
+    Pareto(Highcharts);
+    // 会议图
+    import Item from 'highcharts/modules/item-series';
+    Item(Highcharts);
+    // 甘特图
+    import Xrange from 'highcharts/modules/xrange';
+    Xrange(Highcharts);
+    // 词云图
+    import Word from 'highcharts/modules/wordcloud';
+    Word(Highcharts);
+    // 哑铃图
+    import Dumbbell from 'highcharts/modules/dumbbell';
+    Dumbbell(Highcharts);
+    // 棒棒糖图
+    import Lollipop from 'highcharts/modules/lollipop';
+    Lollipop(Highcharts);
 
     export default {
         name: "Chart",
