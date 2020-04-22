@@ -64,6 +64,12 @@ const routes = [{
             title: 'table'
         },
         component: (resolve) => require(['../views/table.vue'], resolve)
+    },{
+        path: '/test',
+        meta: {
+            title: 'test'
+        },
+        component: (resolve) => require(['../views/test.vue'], resolve)
     }, {
         path: '*',
         redirect: '/'
