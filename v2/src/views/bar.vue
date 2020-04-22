@@ -67,7 +67,7 @@
         data () {
             return {
                 theme: {
-                    type: 'gray'
+                    type: 'sand-signika'
                 },
                 confBar1: {
                     chart: {
@@ -160,13 +160,13 @@
                         }
                     },
                     series: [{
-                        name: '小张',
+                        name: 'Akashi',
                         data: [5, 3, 4, 7, 2]
                     }, {
-                        name: '小彭',
+                        name: 'Asuka',
                         data: [2, 2, 3, 2, 1]
                     }, {
-                        name: '小潘',
+                        name: 'Gakki',
                         data: [3, 4, 4, 2, 5]
                     }]
                 },
@@ -175,7 +175,7 @@
                         type: 'bar'
                     },
                     title: {
-                        text: '2015 年德国人口金字塔'
+                        text: '2019 年德国人口金字塔'
                     },
                     subtitle: {
                         useHTML: true,
@@ -296,13 +296,13 @@
                         categories: ['苹果', '橘子', '梨', '葡萄', '香蕉']
                     },
                     series: [{
-                        name: '小张',
+                        name: 'Akashi',
                         data: [5, 3, 4, 7, 2]
                     }, {
-                        name: '小彭',
+                        name: 'Asuka',
                         data: [2, -2, -3, 2, 1]
                     }, {
-                        name: '小潘',
+                        name: 'Gakki',
                         data: [3, 4, 4, -2, 5]
                     }]
                 },

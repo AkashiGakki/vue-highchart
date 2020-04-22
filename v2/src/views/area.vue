@@ -539,13 +539,13 @@
                         enabled: false
                     },
                     series: [{
-                        name: '小张',
+                        name: 'Akashi',
                         data: [5, 3, 4, 7, 2]
                     }, {
-                        name: '小彭',
+                        name: 'Asuka',
                         data: [2, -2, -3, 2, 1]
                     }, {
-                        name: '小潘',
+                        name: 'Gakki',
                         data: [3, 4, 4, -2, 5]
                     }]
                 },

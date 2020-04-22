@@ -2552,14 +2552,14 @@
         data () {
             return {
                 theme: {
-                    // type: 'gray'
+                    // type: 'grid-light'
                 },
                 conf: {
                     chart: {
                         type: 'line'
                     },
                     title: {
-                        text: '2010 ~ 2016 年太阳能行业就业人员发展情况'
+                        text: '2013 ~ 2020 年太阳能行业就业人员发展情况'
                     },
                     subtitle: {
                         text: '基础折线图'
@@ -2569,6 +2569,9 @@
                             text: '就业人数'
                         }
                     },
+                    // xAxis: {
+                    //     categories: ['2013', '2014', '2015']
+                    // },
                     legend: {
                         layout: 'vertical',
                         align: 'right',
@@ -2579,7 +2582,7 @@
                             label: {
                                 connectorAllowed: false
                             },
-                            pointStart: 2010
+                            pointStart: 2013
                         }
                     },
                     series: [{
@@ -2638,8 +2641,10 @@
                                 enabled: true
                             },
                             // 关闭鼠标跟踪，对应的提示框、点击事件会失效
-                            enableMouseTracking: false
-                        }
+                            enableMouseTracking: false,
+                            // x轴起点
+                            // pointStart: 1
+                        },
                     },
                     series: [{
                         name: '东京',
@@ -2648,6 +2653,9 @@
                         name: '伦敦',
                         data: [3.9, 4.2, 5.7, 8.5, 11.9, 15.2, 17.0, 16.6, 14.2, 10.3, 6.6, 4.8]
                     }]
+                    // series: [{
+                    //     data: [5,7,9,14,18,21,25,23,17,13]
+                    // }]
                 },
                 confLine3: {
                     chart: {

@@ -10,12 +10,15 @@
     const mapdata = require('../map/china');
     const worlddata = require('../map/world');
 
+    // import mapData from 'vue-highcharts-v2/map/china';
+    // import worldData from 'vue-highcharts-v2/map/world';
+
     export default {
         name: "index",
         data () {
             return {
                 theme: {
-                    type: 'sunset',
+                    // type: 'sunset',
                     // type: 'black-white',
                     // chart: {
                     //     backgroundColor: 'black'
@@ -27,7 +30,7 @@
                 },
                 chartConf: {
                     chart: {
-                        type: 'bar'
+                        type: 'area'
                     },
                     title: {
                         text: 'Highcharts_Demo'
