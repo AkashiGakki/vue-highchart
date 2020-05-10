@@ -30,7 +30,7 @@
                 },
                 chartConf: {
                     chart: {
-                        type: 'area'
+                        type: 'bar'
                     },
                     title: {
                         text: 'Highcharts_Demo'

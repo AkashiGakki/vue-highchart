@@ -1243,7 +1243,8 @@
                         }
                     },
                     subtitle: {
-                        text: '自由绘图 - 有报错'
+                        text: '自由绘图'
+                        // text: '自由绘图 - 有报错'
                     }
                 },
                 confMore18: {

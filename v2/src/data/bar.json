@@ -1,0 +1,14 @@
+{
+    "data": {
+        "y": [{
+            "name": "akashi",
+            "data": [1, 2, 3, 4]
+        }, {
+            "name": "asuka",
+            "data": [4, 3, 2, 1]
+        }],
+        "x": ["Apple", "Banana", "Orange"],
+        "title": "This is a Title"
+    }
+}
+
