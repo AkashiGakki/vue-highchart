@@ -9,7 +9,11 @@
   "dependencies": {
     "axios": "^0.19.2",
     "core-js": "^3.6.4",
+    "element-ui": "^2.13.1",
     "highcharts": "^8.0.0",
+    "koa": "^2.11.0",
+    "koa2-cors": "^2.0.6",
+    "qs": "^6.9.4",
     "vue": "^2.6.11",
     "vue-router": "^3.1.5"
   },

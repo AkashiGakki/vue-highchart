@@ -1,6 +1,6 @@
 <template>
     <div class="area">
-        <v-chart :config="confArea1"></v-chart>
+        <v-chart :config="confArea1" :theme="theme"></v-chart>
         <v-chart :config="confArea2"></v-chart>
         <v-chart :config="confArea3"></v-chart>
         <v-chart :config="confArea4"></v-chart>
@@ -10,6 +10,40 @@
         <v-chart :config="confArea8"></v-chart>
         <v-chart :config="confArea9"></v-chart>
 <!--        <v-chart :config="confArea10"></v-chart>-->
+        <div style="width:50%; margin: 30px auto">
+            <el-row type="flex" class="row-bg" justify="space-around">
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                       <el-link :underline="false" href="/index">index</el-link>
+                    </el-button>    
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                        <el-link :underline="false" href="/line">line</el-link>
+                    </el-button>
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                        <el-link :underline="false" href="/area">area</el-link>    
+                    </el-button>    
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                        <el-link :underline="false" href="/bar">bar</el-link>    
+                    </el-button>    
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                        <el-link :underline="false" href="/pie">pie</el-link>    
+                    </el-button>    
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                        <el-link :underline="false" href="/more">more</el-link>    
+                    </el-button>    
+                </div></el-col>
+            </el-row>
+        </div>
     </div>
 </template>
 
@@ -464,6 +498,9 @@
         name: "areas",
         data () {
             return {
+                theme: {
+                    type: 'skies'
+                },
                 confArea1: {
                     chart: {
                         type: 'area'

@@ -1,14 +1,48 @@
 <template>
     <div class="pie">
-        <v-chart :config="confPie1"></v-chart>
+        <v-chart :config="confPie1" :theme="theme"></v-chart>
         <v-chart :config="confPie2"></v-chart>
         <v-chart :config="confPie3"></v-chart>
         <v-chart :config="confPie4"></v-chart>
         <v-chart :config="confPie5"></v-chart>
-        <v-chart :config="confPie6"></v-chart>
+        <!-- <v-chart :config="confPie6"></v-chart> -->
         <v-chart :config="confPie7"></v-chart>
         <v-chart :config="confPie8"></v-chart>
 <!--        <v-chart :config="confPie9"></v-chart>-->
+        <div style="width:50%; margin: 30px auto">
+            <el-row type="flex" class="row-bg" justify="space-around">
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                       <el-link :underline="false" href="/index">index</el-link>
+                    </el-button>    
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                        <el-link :underline="false" href="/line">line</el-link>
+                    </el-button>
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                        <el-link :underline="false" href="/area">area</el-link>    
+                    </el-button>    
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                        <el-link :underline="false" href="/bar">bar</el-link>    
+                    </el-button>    
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                        <el-link :underline="false" href="/pie">pie</el-link>    
+                    </el-button>    
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                        <el-link :underline="false" href="/more">more</el-link>    
+                    </el-button>    
+                </div></el-col>
+            </el-row>
+        </div>
     </div>
 </template>
 
@@ -1395,6 +1429,9 @@
         name: "pie",
         data () {
             return {
+                theme: {
+                    type: 'sand-signika'
+                },
                 confPie1: {
                     chart: {
                         plotBackgroundColor: null,

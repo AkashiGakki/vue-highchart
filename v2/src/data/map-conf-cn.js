@@ -1,0 +1,103 @@
+module.exports = [{
+    name: '湖北',
+    value: 68129,
+}, {
+    name: '广东',
+    value: 1589
+}, {
+    name: '河南',
+    value: 1276
+}, {
+    name: '浙江',
+    value: 1268
+}, {
+    name: '香港',
+    value: 1047
+}, {
+    name: '湖南',
+    value: 1019
+}, {
+    name: '安徽',
+    value: 991
+}, {
+    name: '江西',
+    value: 959
+}, {
+    name: '黑龙江',
+    value: 945
+}, {
+    name: '山东',
+    value: 788
+}, {
+    name: '江苏',
+    value: 653
+}, {
+    name: '上海',
+    value: 659
+}, {
+    name: '北京',
+    value: 593
+}, {
+    name: '重庆',
+    value: 579
+}, {
+    name: '四川',
+    value: 561
+}, {
+    name: '台湾',
+    value: 440
+}, {
+    name: '福建',
+    value: 355
+}, {
+    name: '河北',
+    value: 328
+}, {
+    name: '陕西',
+    value: 308
+}, {
+    name: '广西',
+    value: 254
+}, {
+    name: '山西',
+    value: 198
+}, {
+    name: '内蒙古',
+    value: 201
+}, {
+    name: '天津',
+    value: 191
+}, {
+    name: '云南',
+    value: 184
+}, {
+    name: '海南',
+    value: 168
+}, {
+    name: '贵州',
+    value: 147
+}, {
+    name: '辽宁',
+    value: 147
+}, {
+    name: '甘肃',
+    value: 139
+}, {
+    name: '吉林',
+    value: 124
+}, {
+    name: '新疆',
+    value: 76
+}, {
+    name: '宁夏',
+    value: 75
+}, {
+    name: '澳门',
+    value: 45
+}, {
+    name: '青海',
+    value: 18
+}, {
+    name: '西藏',
+    value: 1
+}]

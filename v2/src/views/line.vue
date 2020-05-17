@@ -9,6 +9,40 @@
         <v-chart :config="confLine7"></v-chart>
         <v-chart :config="confLine8"></v-chart>
         <v-chart :config="confLine9"></v-chart>
+        <div style="width:50%; margin: 30px auto">
+            <el-row type="flex" class="row-bg" justify="space-around">
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                       <el-link :underline="false" href="/index">index</el-link>
+                    </el-button>    
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                        <el-link :underline="false" href="/line">line</el-link>
+                    </el-button>
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                        <el-link :underline="false" href="/area">area</el-link>    
+                    </el-button>    
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                        <el-link :underline="false" href="/bar">bar</el-link>    
+                    </el-button>    
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                        <el-link :underline="false" href="/pie">pie</el-link>    
+                    </el-button>    
+                </div></el-col>
+                <el-col :span="4"><div class="grid-content bg-purple">
+                    <el-button  size="small" round>
+                        <el-link :underline="false" href="/more">more</el-link>    
+                    </el-button>    
+                </div></el-col>
+            </el-row>
+        </div>
     </div>
 </template>
 
