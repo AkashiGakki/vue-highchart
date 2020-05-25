@@ -1,0 +1,22 @@
+{
+  "name": "vue-highchart",
+  "version": "0.0.2",
+  "description": "A Highcharts component for Vue",
+  "main": "./components/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AkashiGakki/vue-highcharts.git"
+  },
+  "keywords": [
+    "vue-highchart", "highcharts"
+  ],
+  "author": "akashi_sai",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AkashiGakki/vue-highcharts/issues"
+  },
+  "homepage": "https://github.com/AkashiGakki/vue-highcharts#readme"
+}
